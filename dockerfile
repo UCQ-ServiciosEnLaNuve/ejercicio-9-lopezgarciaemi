@@ -1,14 +1,14 @@
 FROM php:7.2-fpm
 
 RUN apt-get update && apt-get install -y \
-    git \
+    git\
     curl \
     libicu-dev \
     libpng-dev \
     libonig-dev \
     libzip-dev \
     libpq-dev \
-    zip \
+    zip\
     unzip
 
 RUN docker-php-ext-install mysqli pdo pdo_mysql mbstring exif pcntl bcmath gd zip intl
